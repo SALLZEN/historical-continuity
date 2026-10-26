@@ -1,0 +1,9 @@
+.venv/
+reproduced/
+__pycache__/
+*.pyc
+.DS_Store
+._*
+.cache/
+dist/
+inputs/papers.parquet

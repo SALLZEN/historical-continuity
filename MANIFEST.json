@@ -1,0 +1,122 @@
+{
+  "format": 1,
+  "revision": "EJPS revised manuscript",
+  "files": {
+    "INPUT-STORAGE.json": {
+      "bytes": 585,
+      "sha256": "8ef1f70419b6693c68dc35ddfe4c3c1148acfc37769212bd3bf4356243b672ac"
+    },
+    "LICENSE": {
+      "bytes": 11,
+      "sha256": "2243a28bde961bcfa5957c3d0ad9aae01b0bc042f0d3d289089825a71b08c45c"
+    },
+    "README.md": {
+      "bytes": 5564,
+      "sha256": "d46b392177ce24b6f5b83a9e85d7249d346185068ffc56c4a7aca2de82d0ab22"
+    },
+    "REVIEWER-GUIDE.md": {
+      "bytes": 2387,
+      "sha256": "c313e72352e5e333ad455f7b6d680627d957c8fa3d1bbbc216c4488d8e8fed59"
+    },
+    "analysis/bh-citers-by-field.csv": {
+      "bytes": 154,
+      "sha256": "f48a0d75127f1512fa40a11ec4ad658b6e671f9105a4e5037857a9481298b414"
+    },
+    "analysis/bh-linked-early-references.csv": {
+      "bytes": 392,
+      "sha256": "f2fe0b41e364ac63f7909e67e2c1b0fcff6e42d269d88856e8b518346db0df76"
+    },
+    "analysis/bh_early-coefficients.csv": {
+      "bytes": 4212,
+      "sha256": "f5d3c74a4eaa9ed0c63fa6579397fcfedf57f29ef58901bc45b43a9759dd1f9a"
+    },
+    "analysis/bibliometric-summary.json": {
+      "bytes": 2557,
+      "sha256": "fdc8085935aeda04a9f70a8240cd589b44fa897a21bcc246fd69ecfc2e1eb48d"
+    },
+    "analysis/citation-rate-verification.csv": {
+      "bytes": 9855269,
+      "sha256": "633eb5fced3f63dbe5e4c0cb202187f7cedd21a36660fb922e7d35bfebf51e50"
+    },
+    "analysis/co-citation-analysis.csv": {
+      "bytes": 5118293,
+      "sha256": "5d5cd918dc2d7ad563a14de2ad569cc9cfa01ea52accb6b8ab8053d32e303a65"
+    },
+    "analysis/historical-comparators.csv": {
+      "bytes": 423,
+      "sha256": "0de9ab101220bbe6ca4134f7a6165d95f7f874629531a9e07058bdcc6cba22b3"
+    },
+    "analysis/other_early-coefficients.csv": {
+      "bytes": 4227,
+      "sha256": "86955c986a0ec3b5eaf303eac2f380deaf389cdf7a372069d810167cde274b7a"
+    },
+    "analysis/stratum-differences.csv": {
+      "bytes": 1467,
+      "sha256": "d19c3148fbdb3ebbd5b8d26c41569646d99d166f413001fc9616dcc4646a51e0"
+    },
+    "checks/expected-results.json": {
+      "bytes": 2557,
+      "sha256": "fdc8085935aeda04a9f70a8240cd589b44fa897a21bcc246fd69ecfc2e1eb48d"
+    },
+    "inputs/avg_citations_result.parquet": {
+      "bytes": 1889242,
+      "sha256": "4653325ea7831241d7b8f2530fa21b3c8009bfdcc153502777b133560a8e4c83"
+    },
+    "inputs/paper_arxiv_classes.parquet": {
+      "bytes": 2419987,
+      "sha256": "deb68bc17040856ce5800792f2b721faf2bbff11031adb723e4b4b6d4628127c"
+    },
+    "inputs/paper_citations.parquet": {
+      "bytes": 75380351,
+      "sha256": "30526ce5e83e582033ee009c2ddb4ca6adea481b4701309dc53de983a4aeccd4"
+    },
+    "inputs/paper_metrics_long.parquet": {
+      "bytes": 11203216,
+      "sha256": "34470e70fbce2f9742c1837d5ddb5fb0b6fd61a627cb11885d7c7ac409fdf237"
+    },
+    "inputs/papers.parquet.part01": {
+      "bytes": 78643200,
+      "sha256": "ef3f6369b4b8517bca3a6f12b904067fd5a3d238212ef3f79ea48ca2465dcf56"
+    },
+    "inputs/papers.parquet.part02": {
+      "bytes": 66548104,
+      "sha256": "5dbc54bf7ec3188aa78ec450723df74def8c4d017cad77a2c74559a590ff26be"
+    },
+    "manuscript-figures/arxiv-waffle-plot.pdf": {
+      "bytes": 43068,
+      "sha256": "1c840fa592db4f1f6dedf873aadaeda042cd17a5a2fa707e9d4f95a9abe06eac"
+    },
+    "manuscript-figures/fig-impact.png": {
+      "bytes": 2029444,
+      "sha256": "1c264bca40d6018295cb2adfe80176cd65995712d8818612cedd531461312ef7"
+    },
+    "manuscript-figures/lundmark_tabell.png": {
+      "bytes": 80346,
+      "sha256": "06a6eb3fe364024506404d41fca1edcf3817cf1c77776c9838cce1f523467549"
+    },
+    "manuscript-figures/stratum-plot.pdf": {
+      "bytes": 86387,
+      "sha256": "685f92cfc403ddc7300533cb19f7054fe3810b113c06fe310d691b5d08822cbe"
+    },
+    "requirements.txt": {
+      "bytes": 110,
+      "sha256": "38bae5614fe9e69602e5138ed5d87f47e878c3b13df6143d51611e9b1cd07131"
+    },
+    "scripts/check_results.py": {
+      "bytes": 5543,
+      "sha256": "3990c8451d034bd900304271dee85ce1de67429f273af0c4b7ddbcd7c4b29c47"
+    },
+    "scripts/materialize_inputs.py": {
+      "bytes": 1793,
+      "sha256": "26a037173b7159254680a33f6ffad0c32e072edd0f4d0c795991d194c780c407"
+    },
+    "scripts/reproduce.py": {
+      "bytes": 12372,
+      "sha256": "a11394b3ca3d65e6b926d052788d0c7e38f2fbb0d9b2e736487cd5c96d93d760"
+    },
+    "scripts/verify_files.py": {
+      "bytes": 997,
+      "sha256": "b453b5cf214ce92bae46b8bd99339a00b88c6819818fb66bce7f0567cec49030"
+    }
+  }
+}

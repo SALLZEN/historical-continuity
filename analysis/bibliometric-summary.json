@@ -1,0 +1,71 @@
+{
+  "full_corpus": 201272,
+  "year_range": [
+    1883,
+    2026
+  ],
+  "rate_records": 158367,
+  "rate_records_verified_from_annual_metrics": 158367,
+  "rate_max_absolute_error": 0.0,
+  "positive_rate_records": 157956,
+  "bh_rate": 122.33333333333333,
+  "bh_percentile": 99.8661337273548,
+  "bh_graph_citers": 729,
+  "classified_bh_citers": 551,
+  "linked_early_reference_count": 7,
+  "analysis_n": 55140,
+  "analysis_bh_citers": 513,
+  "analysis_outcome_counts": "{\"('bh_early', 'sum')\":{\"0\":576,\"1\":67},\"('bh_early', 'mean')\":{\"0\":0.0105442364,\"1\":0.1306042885},\"('other_early', 'sum')\":{\"0\":168,\"1\":6},\"('other_early', 'mean')\":{\"0\":0.0030754023,\"1\":0.0116959064}}",
+  "results": {
+    "bh_early": {
+      "odds_ratio": 6.9055859167055536,
+      "wald_ci95": [
+        5.173720147056383,
+        9.217181350663878
+      ],
+      "mean_standardized_difference": 0.0552246836921705,
+      "median_standardized_difference": 0.047514832689994554,
+      "converged": true,
+      "warnings": []
+    },
+    "other_early": {
+      "odds_ratio": 3.4031765435232453,
+      "wald_ci95": [
+        1.4665112657051822,
+        7.89738944202227
+      ],
+      "mean_standardized_difference": 0.007248621929946086,
+      "median_standardized_difference": 0.0035721859235231263,
+      "converged": true,
+      "warnings": []
+    }
+  },
+  "inputs": {
+    "papers": {
+      "path": "inputs/papers.parquet",
+      "sha256": "19dcb0f53163eaeedf88f15d6eb7a0ee662dd72d9399a1a4aa3050dc352a4700"
+    },
+    "paper_citations": {
+      "path": "inputs/paper_citations.parquet",
+      "sha256": "30526ce5e83e582033ee009c2ddb4ca6adea481b4701309dc53de983a4aeccd4"
+    },
+    "paper_arxiv_classes": {
+      "path": "inputs/paper_arxiv_classes.parquet",
+      "sha256": "deb68bc17040856ce5800792f2b721faf2bbff11031adb723e4b4b6d4628127c"
+    },
+    "paper_metrics_long": {
+      "path": "inputs/paper_metrics_long.parquet",
+      "sha256": "34470e70fbce2f9742c1837d5ddb5fb0b6fd61a627cb11885d7c7ac409fdf237"
+    },
+    "avg_citations_result": {
+      "path": "inputs/avg_citations_result.parquet",
+      "sha256": "4653325ea7831241d7b8f2530fa21b3c8009bfdcc153502777b133560a8e4c83"
+    }
+  },
+  "limits": [
+    "Retained linked references are incomplete relative to the full bibliographies.",
+    "Reference-list length means linked, date-eligible references, not the full reference list.",
+    "Citation overlap is an association, not interpretive adherence or causal impact.",
+    "No original ADS retrieval timestamp is embedded in these parquet inputs."
+  ]
+}

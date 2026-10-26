@@ -1,0 +1,18 @@
+{
+  "table": "papers.parquet",
+  "bytes": 145191304,
+  "sha256": "19dcb0f53163eaeedf88f15d6eb7a0ee662dd72d9399a1a4aa3050dc352a4700",
+  "parts": [
+    {
+      "file": "papers.parquet.part01",
+      "bytes": 78643200,
+      "sha256": "ef3f6369b4b8517bca3a6f12b904067fd5a3d238212ef3f79ea48ca2465dcf56"
+    },
+    {
+      "file": "papers.parquet.part02",
+      "bytes": 66548104,
+      "sha256": "5dbc54bf7ec3188aa78ec450723df74def8c4d017cad77a2c74559a590ff26be"
+    }
+  ],
+  "purpose": "Lossless transport of the largest input table in ordinary GitHub source archives without Git LFS."
+}
