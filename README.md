@@ -1,67 +1,81 @@
-# Computational materials for the EJPS revision
+# Historical Continuity: EJPS computational companion
 
 Manuscript: **Historical Continuity as Justification for Dark Matter: How History Becomes an Epistemic Strategy**.
 
-These materials support Sections 3.1 and 3.3 and Appendix A. They contain the retained ADS inputs, analysis code, comparison tables, complete model coefficients, and the manuscript figures. No live ADS query is needed. The original retrieval date is not embedded in the retained input files and has not been reconstructed.
+This private repository supports the retained EJPS evidence with five local input tables, two logistic models, independent checks, a shared-function notebook and approved STIX PDF exports. No ADS credentials or live retrieval are required.
 
-## Two review packages
+The deposited scientific baseline is [Zenodo 23675367](https://doi.org/10.5281/zenodo.23675367). This is an **unreleased normalized companion update**, based on that unchanged evidence and DAMADI archive v0.1.1. See NORMALIZATION.md and PROVENANCE.json.
 
-- **Full package:** includes all five retained input tables. It supports reconstruction from those inputs.
-- **Compact package:** includes the complete model dataset and output tables, code, figures, and checks. It supports independent refitting of both reported models, but does not include the raw retained input tables. Use the full package to reconstruct the corpus and citation rates.
+## Set up Python
 
-## Setup
+Use Python 3.11. From the repository root:
 
-Use Python 3.11 and the supplied dependency versions. From this directory:
+    ./setup-environment.sh
 
-```sh
-python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
-```
+This creates .runtime/venv and installs requirements.lock.txt, the complete tested Python environment. requirements.txt lists the direct dependency pins. If necessary:
 
-The requirements contain only the analysis dependencies. R, Quarto, API credentials, Git LFS, and the original research directory are not needed for the revision workflow.
+    PYTHON_BIN=/absolute/path/to/python3.11 ./setup-environment.sh
 
-## Inspect and verify
+Select an existing compatible environment with DAMADI_PYTHON=/absolute/path/to/python when running the commands below.
 
-```sh
-.venv/bin/python scripts/verify_files.py
-.venv/bin/python scripts/check_results.py
-```
+## Reconstruct and check the numerical analysis
 
-The first command verifies the supplied files against `MANIFEST.json`. In the compact package it reports the intentionally omitted input files. The second refits both logistic models from `analysis/co-citation-analysis.csv`, compares their coefficients and intervals with the supplied tables, verifies the cohort sizes and comparator rates, and independently checks the reported citation-rate calculations from the verification table.
+    ./run.sh --analysis-only
 
-## Reconstruct from the retained inputs (full package)
+This restores papers.parquet from its transport parts, verifies all five input hashes, reconstructs the 55,140-paper sample, fits both models, independently checks 158,367 annual citation rates and percentiles, compares all eight CSV tables and the numerical summary, and records the checked run.
 
-```sh
-.venv/bin/python scripts/reproduce.py
-.venv/bin/python scripts/check_results.py --reproduced reproduced
-```
+For the same stages in a fresh private notebook kernel:
 
-The reconstruction verifies input checksums, writes to `reproduced/analysis/` and `reproduced/figures/`, and leaves the supplied analysis tables and manuscript figures untouched. Alternative locations can be selected with `--data-dir` and `--output-dir`.
+    ./run.sh --notebook --analysis-only
 
-## Input storage
+The clean source is notebooks/01-reproduce-ejps-analysis.ipynb. It uses the same numbered functions as scripts/reproduce.py. The executed copy goes to executed-notebooks/. No global kernel is installed.
 
-The GitHub source archive includes the actual data, without Git LFS pointers. To keep each stored file within GitHub's ordinary file-size limit, `papers.parquet` is transported as `papers.parquet.part01` and `papers.parquet.part02`. `scripts/reproduce.py` automatically restores the original table and verifies its hash. You can also run `python3 scripts/materialize_inputs.py` separately. This changes file transport only; no rows, columns, or values have been removed or altered.
+## Export the approved figures
 
-## Contents
+The approved graphics route is verified on macOS and uses R, Quartz, command-line C compiler tools and rsvg-convert. Required/tested R packages are listed in config/r-environment.json. Install these separately; setup-environment.sh installs Python packages only.
 
-- `inputs/`: five retained Parquet tables, unchanged at the byte level. The largest table is stored as two lossless transport parts and is restored automatically before reconstruction. The other four tables are supplied directly.
-- `INPUT-STORAGE.json`: part sizes and checksums for restoring the largest table.
-- `scripts/materialize_inputs.py`: restoration of that table, verified against its original SHA-256 hash.
-- `analysis/`: supplied results, including the complete model sample, two coefficient tables, stratum predictions, historical comparators, field counts, seven linked early references, citation-rate verification, and numerical summary.
-- `checks/expected-results.json`: numerical targets and input hashes corresponding to this revision.
-- `scripts/reproduce.py`: reconstruction from retained inputs.
-- `scripts/check_results.py`: independent refitting and comparison of numerical results.
-- `scripts/verify_files.py`: package integrity check using SHA-256.
-- `manuscript-figures/`: the exact four image/PDF files used in the current manuscript.
-- `MANIFEST.json`: sizes and SHA-256 hashes for the package files.
-- `REVIEWER-GUIDE.md`: correspondence between evidence and manuscript claims.
+    ./run.sh
 
-## Figure provenance
+Or run the full analysis and figure notebook:
 
-The three computational figures in `manuscript-figures/` are the author-edited files actually included by the manuscript. The fourth is the historical Lundmark table image. The co-citation figure's title and horizontal-axis wording have been updated to describe the association; its plotted graphics are unchanged. The reconstruction generates alternative numerical displays (`fig-impact.pdf`, `fig-stratum.pdf`) and copies the supplied field display (`fig-arxiv.pdf`) after verifying its counts. Those rebuilt displays support checking the calculations; they do not reproduce the typography and layout of the author-edited manuscript figures. No newly generated figure is represented as the exact manuscript graphic.
+    ./run.sh --notebook
+
+After a numerical run, regenerate figures alone with:
+
+    .runtime/venv/bin/python scripts/03-export-figures.py
+
+The readable R constructions are scripts/02-export-waffle.R and scripts/02b-export-stratum.R. When running them manually from an IDE, set the repository root as the working directory and run the waffle stage before the stratum stage; the latter uses its category palette. Bundled STIX Two Text uses Medium for logical bold, with no global font installation.
+
+## Retained and generated material
+
+- inputs/: unchanged source tables. The largest travels as two lossless parts and is restored automatically. No Git LFS or new data download is needed.
+- analysis/ and checks/: supplied reference results and numerical targets.
+- manuscript-figures/: exact submitted/deposited artwork, retained as evidence.
+- figures/: exact approved normalized PDF references and their registry. config/normalized-figures.json pins identities, dimensions and exceptions.
+- scripts/modules/: shared analysis and plotting functions; scripts/ contains the readable entry points and retained independent checks.
+- notebooks/: clean source notebook.
+- reproduced/: newly calculated analysis tables, PDF exports, figure registry and run record.
+- verification/ and executed-notebooks/: generated checks and executed notebook, ignored by Git.
+- resources/fonts/: bundled static STIX faces, OFL license and attribution.
+- MANIFEST.json: checked-in package integrity, excluding the manifest itself and runtime files.
+
+Run in a writable checkout. Reproduction does not overwrite supplied analysis, submitted artwork or approved figure references.
+
+## Existing checking commands
+
+    .runtime/venv/bin/python scripts/verify_files.py
+    .runtime/venv/bin/python scripts/check_results.py
+    .runtime/venv/bin/python scripts/reproduce.py
+    .runtime/venv/bin/python scripts/check_results.py --reproduced reproduced
+
+The direct reproduce.py command now reconstructs numbers only; ./run.sh also performs the independent check, optional approved figure stage and checked-run recording. Its --data-dir and --output-dir options remain available. To restore just the largest table:
+
+    .runtime/venv/bin/python scripts/materialize_inputs.py
 
 ## Interpretation and limits
 
-The complete retrieval corpus, citation-rate cohort, classified citing papers, and model sample have different denominators. The historical comparators are named examples spanning different genres. The seven early sources are recovered citation-graph links, not a complete transcription of the review's bibliography. Reference-list length means linked, date-eligible references. The models estimate associations; they do not establish causal influence, interpretive agreement, reference stabilization, or funding effects. The second model does not test a difference between the two citation-indicator coefficients.
+The full corpus, rate cohort, classified review citers and fitted-model sample have different denominators. The seven linked early sources are a recoverable citation-graph subset, not the review's complete bibliography. Reference-list length means linked, date-eligible references. The models establish associations rather than causal influence or interpretive agreement. The second model does not test a difference between coefficients.
 
-The inherited license designation is retained in `LICENSE`; this preparation assigns no new license. Bibliographic content and historical source material remain part of the evidence and have not been altered for anonymization.
+The original ADS retrieval timestamp is not embedded in the retained tables. Historical comparators are named examples, not an exhaustive genre population. These runs reproduce the retained calculation without adding an independent validation sample. Submitted graphics remain distinguishable from normalized PDF exports.
+
+The inherited LICENSE designation is unchanged. Font licensing is supplied under resources/fonts/OFL.txt. REVIEWER-GUIDE.md retains the deposited evidence-to-claim correspondence.

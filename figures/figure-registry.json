@@ -1,0 +1,63 @@
+[
+  {
+    "figure": "fig-citation-impact",
+    "pdf": "fig-citation-impact.pdf",
+    "source": "Retained annual-rate table; original notebook scatter construction",
+    "seed": 42,
+    "jitter_order": "y followed by x, uniform -1.5 to 1.5; unchanged from retained notebook",
+    "positive_rate_records": 157956,
+    "percentile_denominator": 158367,
+    "target_rate": 122.33333333333333,
+    "target_percentile": 99.8661337273548,
+    "width_mm": 156,
+    "height_mm": 90,
+    "presentation_revision": "0.1.6",
+    "text_font": "Bundled STIX Two Text",
+    "emphasis": "Medium",
+    "background": "white",
+    "minimum_normal_text_pt": 9
+  },
+  {
+    "figure": "fig-cocitation-strata",
+    "pdf": "fig-cocitation-strata.pdf",
+    "source": "Author-supplied ggplot specification; verified revision predictions, no refit",
+    "displayed_strata": 12,
+    "model_recalculation_for_presentation": false,
+    "export_backend": "Quartz PDF",
+    "size_scale": {
+      "ggplot_range_mm": [
+        5,
+        15
+      ],
+      "legend_title": "Review-citing papers:"
+    },
+    "minimum_normal_text_pt": 8.5,
+    "manuscript_inclusion_width_mm": 156,
+    "width_mm": 177.8,
+    "height_mm": 101.6,
+    "presentation_revision": "0.1.6",
+    "text_font": "Bundled STIX Two Text",
+    "emphasis": "Medium",
+    "background": "white"
+  },
+  {
+    "figure": "fig-arxiv-citing-patterns",
+    "pdf": "fig-arxiv-citing-patterns.pdf",
+    "source": "Author stepwise R waffle/bar construction, using the verified frozen primary-class counts",
+    "displayed_counts": {
+      "high-energy physics": 233,
+      "astrophysics": 180,
+      "general relativity and quantum cosmology": 76,
+      "physics": 48
+    },
+    "classified_records": 551,
+    "outside_display": 14,
+    "width_mm": 156,
+    "height_mm": 122.21793103448275,
+    "presentation_revision": "0.1.6",
+    "text_font": "Bundled STIX Two Text",
+    "emphasis": "Medium",
+    "background": "white",
+    "minimum_normal_text_pt": 9
+  }
+]

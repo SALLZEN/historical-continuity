@@ -1,0 +1,37 @@
+{
+  "R": "4.6.1",
+  "verified_platform": "aarch64-apple-darwin23 / macOS 15.7.1",
+  "required_packages": {
+    "arrow": "25.0.1",
+    "dplyr": "1.2.1",
+    "forcats": "1.0.1",
+    "ggplot2": "4.0.3",
+    "ggsci": "5.2.0",
+    "patchwork": "1.3.2",
+    "rcartocolor": "2.1.2",
+    "scales": "1.4.0",
+    "stringr": "1.6.0",
+    "svglite": "2.2.2",
+    "systemfonts": "1.3.2",
+    "tidyr": "1.3.2"
+  },
+  "external_programs": [
+    "Rscript",
+    "rsvg-convert"
+  ],
+  "installation": "Install R packages separately, preferably in a project library; setup-environment.sh installs Python requirements only.",
+  "historical_lock": "The older research renv.lock is not used by this normalized companion; install the separately listed R packages.",
+  "stratum_export": {
+    "backend": "Native Quartz PDF",
+    "width_in": 7,
+    "height_in": 4,
+    "platform_requirement": "macOS R with Quartz support",
+    "font_registration": "Bundled static STIX fonts registered only in the current R process",
+    "native_build_requirement": "macOS command-line compiler plus R headers (present in verified environment)",
+    "native_cache": ".runtime/quartz-fonts/",
+    "font_helper_sources": [
+      "scripts/modules/quartz-fonts.R",
+      "scripts/modules/register-quartz-fonts.c"
+    ]
+  }
+}

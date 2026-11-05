@@ -1,0 +1,27 @@
+{
+  "papers": {
+    "file": "papers.parquet",
+    "bytes": 145191304,
+    "sha256": "19dcb0f53163eaeedf88f15d6eb7a0ee662dd72d9399a1a4aa3050dc352a4700"
+  },
+  "paper_citations": {
+    "file": "paper_citations.parquet",
+    "bytes": 75380351,
+    "sha256": "30526ce5e83e582033ee009c2ddb4ca6adea481b4701309dc53de983a4aeccd4"
+  },
+  "paper_arxiv_classes": {
+    "file": "paper_arxiv_classes.parquet",
+    "bytes": 2419987,
+    "sha256": "deb68bc17040856ce5800792f2b721faf2bbff11031adb723e4b4b6d4628127c"
+  },
+  "paper_metrics_long": {
+    "file": "paper_metrics_long.parquet",
+    "bytes": 11203216,
+    "sha256": "34470e70fbce2f9742c1837d5ddb5fb0b6fd61a627cb11885d7c7ac409fdf237"
+  },
+  "avg_citations_result": {
+    "file": "avg_citations_result.parquet",
+    "bytes": 1889242,
+    "sha256": "4653325ea7831241d7b8f2530fa21b3c8009bfdcc153502777b133560a8e4c83"
+  }
+}
