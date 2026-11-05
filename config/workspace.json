@@ -1,0 +1,11 @@
+{
+  "entry_code": "E.03--MS-DA-CR",
+  "project": "Historical Continuity",
+  "normalized_edition": "0.1.0",
+  "analysis_source": "Retained EJPS revision",
+  "inputs": "inputs",
+  "supplied_results": "analysis",
+  "reproduced_results": "reproduced",
+  "seed_for_retained_scatter_jitter": 42,
+  "randomness_in_model_fitting": false
+}

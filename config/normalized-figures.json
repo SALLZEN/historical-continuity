@@ -1,0 +1,34 @@
+{
+  "archive_snapshot": "v0.1.1",
+  "presentation_edition": "0.1.6",
+  "fonts": "Bundled STIX Two Text; Medium emphasis",
+  "waffle_subclass_vjust": 0.2,
+  "waffle_subclass_offset": 0.45,
+  "waffle_layout_rows": "equal height",
+  "figures": {
+    "fig-citation-impact.pdf": {
+      "dimensions_mm": [
+        156,
+        90
+      ],
+      "sha256": "46104c5d785364a5ea6814bf081147f3ec3dfbeeec66bf385263fbd60a03a4fc"
+    },
+    "fig-arxiv-citing-patterns.pdf": {
+      "dimensions_mm": [
+        156,
+        122.21793103448275
+      ],
+      "sha256": "9da5c7d7b05c9a43a11fd20affe62afb63b530ff486d5bd1de31b524c535b761"
+    },
+    "fig-cocitation-strata.pdf": {
+      "dimensions_mm": [
+        177.8,
+        101.6
+      ],
+      "sha256": "456b58aace8459b7345cddd08674553dba3ab1b23ea4fcbd4efbe9f3e4b63f58"
+    }
+  },
+  "retained_submitted_artwork": "manuscript-figures/",
+  "generated_outputs": "reproduced/figures/",
+  "stratum_author_exception": "Quartz PDF 7 x 4 inches, native x labels 8.5 pt, manuscript inclusion 156 mm"
+}

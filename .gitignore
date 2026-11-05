@@ -7,3 +7,10 @@ __pycache__/
 .cache/
 dist/
 inputs/papers.parquet
+
+# Normalized companion runtime
+.runtime/
+executed-notebooks/
+verification/
+inputs/papers.assembling
+Rplots.pdf

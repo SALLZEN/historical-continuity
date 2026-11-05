@@ -1,7 +1,15 @@
 {
   "format": 1,
-  "revision": "EJPS revised manuscript",
+  "revision": "EJPS scientific baseline with unreleased normalized execution/presentation",
   "files": {
+    ".gitignore": {
+      "bytes": 200,
+      "sha256": "b59ff14749020a320d203d81293f7c6da9405e6612ccb96bd9f0693343edd1f4"
+    },
+    "CHANGELOG.md": {
+      "bytes": 726,
+      "sha256": "4a6d84a59c9d90b7370186359cf64fdda9fa1b116374e683f5d7a309411d14b3"
+    },
     "INPUT-STORAGE.json": {
       "bytes": 585,
       "sha256": "8ef1f70419b6693c68dc35ddfe4c3c1148acfc37769212bd3bf4356243b672ac"
@@ -10,9 +18,17 @@
       "bytes": 11,
       "sha256": "2243a28bde961bcfa5957c3d0ad9aae01b0bc042f0d3d289089825a71b08c45c"
     },
+    "NORMALIZATION.md": {
+      "bytes": 2305,
+      "sha256": "64419145ae863ff3c93e2f9e5c2c830b232c32de4dc8903c786e07c67f42b558"
+    },
+    "PROVENANCE.json": {
+      "bytes": 6889,
+      "sha256": "efdee5cb6810c164bf1a4bdaccfbb4cf110f7b40572afa295fe997c51926f926"
+    },
     "README.md": {
-      "bytes": 5564,
-      "sha256": "d46b392177ce24b6f5b83a9e85d7249d346185068ffc56c4a7aca2de82d0ab22"
+      "bytes": 5366,
+      "sha256": "7d8cfc5b3e72fe0619cc3d276651afebdfa5a15b459ce657aa393c6aa0e082dc"
     },
     "REVIEWER-GUIDE.md": {
       "bytes": 2387,
@@ -58,6 +74,38 @@
       "bytes": 2557,
       "sha256": "fdc8085935aeda04a9f70a8240cd589b44fa897a21bcc246fd69ecfc2e1eb48d"
     },
+    "config/input-manifest.json": {
+      "bytes": 863,
+      "sha256": "628eba463d8ebe74686ac83ce078febdad6678baebac37dfb246b9a884cb2e76"
+    },
+    "config/normalized-figures.json": {
+      "bytes": 1031,
+      "sha256": "03f2d7a76123798fdd37fe2e9e136260484461f99b2fb14f4b7c790fb38554ba"
+    },
+    "config/r-environment.json": {
+      "bytes": 1281,
+      "sha256": "ec8c454a3f3647c666117f2e700e1e644ab25ceeff8de0244c63598564895e58"
+    },
+    "config/workspace.json": {
+      "bytes": 331,
+      "sha256": "913761d7fb9cb41a766a32965e2904bd10130fe4a088e5273c0b1bc8f37d0cec"
+    },
+    "figures/fig-arxiv-citing-patterns.pdf": {
+      "bytes": 17094,
+      "sha256": "9da5c7d7b05c9a43a11fd20affe62afb63b530ff486d5bd1de31b524c535b761"
+    },
+    "figures/fig-citation-impact.pdf": {
+      "bytes": 1945496,
+      "sha256": "46104c5d785364a5ea6814bf081147f3ec3dfbeeec66bf385263fbd60a03a4fc"
+    },
+    "figures/fig-cocitation-strata.pdf": {
+      "bytes": 14320,
+      "sha256": "456b58aace8459b7345cddd08674553dba3ab1b23ea4fcbd4efbe9f3e4b63f58"
+    },
+    "figures/figure-registry.json": {
+      "bytes": 1982,
+      "sha256": "e84d22359762e9577df7c36f24704332772c1cbed7dee30e16fbe1167aa22155"
+    },
     "inputs/avg_citations_result.parquet": {
       "bytes": 1889242,
       "sha256": "4653325ea7831241d7b8f2530fa21b3c8009bfdcc153502777b133560a8e4c83"
@@ -98,25 +146,117 @@
       "bytes": 86387,
       "sha256": "685f92cfc403ddc7300533cb19f7054fe3810b113c06fe310d691b5d08822cbe"
     },
+    "notebooks/01-reproduce-ejps-analysis.ipynb": {
+      "bytes": 8615,
+      "sha256": "03e09ea8e9738ab8d7c05b3039881b13d2e2a5d81b0edafce79f9b0c70626acd"
+    },
+    "requirements.lock.txt": {
+      "bytes": 953,
+      "sha256": "76e797c6157ce2122a7262227fcd4f035dbe2d0f1a11a2916309f0a02f0d448b"
+    },
     "requirements.txt": {
-      "bytes": 110,
-      "sha256": "38bae5614fe9e69602e5138ed5d87f47e878c3b13df6143d51611e9b1cd07131"
+      "bytes": 191,
+      "sha256": "97d3fe15d4da62978d88965d082d154fe13cbe8c2468d152c4b239462250cf1c"
+    },
+    "resources/fonts/AUTHORS.txt": {
+      "bytes": 525,
+      "sha256": "98d40fc97137fea250c07fc46f4f3a4bff15ac8c02adb3fb54a58e1f3755e3ec"
+    },
+    "resources/fonts/FONTLOG.txt": {
+      "bytes": 42411,
+      "sha256": "4c487f672c92c3eb89575b2b55404bc6ab5403c1c28757e2e680fec81199f0a2"
+    },
+    "resources/fonts/OFL.txt": {
+      "bytes": 4882,
+      "sha256": "bec17cee6412788db45fd2644b301afbc99cc5d372ddd3345dc4a7bfdefb9f04"
+    },
+    "resources/fonts/STIXTwoText-Italic.ttf": {
+      "bytes": 320332,
+      "sha256": "8695733706c0768637c6051141abad7cdb854184c7c36fb5050cdd0f4b148e7c"
+    },
+    "resources/fonts/STIXTwoText-Medium.ttf": {
+      "bytes": 294656,
+      "sha256": "2d1f32bbeb89b7b57d726b6bfa6ff5aae2387c4c27ee8f738c1885f70c60e59c"
+    },
+    "resources/fonts/STIXTwoText-MediumItalic.ttf": {
+      "bytes": 321212,
+      "sha256": "2692e8e31886972a51978a68a6460f65697351b334452959aea153ff070f718b"
+    },
+    "resources/fonts/STIXTwoText-Regular.ttf": {
+      "bytes": 294348,
+      "sha256": "d2a222614cf280f2db1d4ebd7d6f0dad5772541f8945a96ee4bf899c845b695b"
+    },
+    "run.sh": {
+      "bytes": 1561,
+      "sha256": "ef98906b5a94172d8f23a00168d0d3318b14265eca650852db5a74423a9211a1"
+    },
+    "scripts/02-export-waffle.R": {
+      "bytes": 18983,
+      "sha256": "ff40621934f152a3aaade87b3a57443c58abe427d99c580bd3308fe469d35ead"
+    },
+    "scripts/02b-export-stratum.R": {
+      "bytes": 4920,
+      "sha256": "7560f6b92d4860de6f31ff4deacfd12ee173a6e3f37ad3d947b04f49de65ccc5"
+    },
+    "scripts/03-export-figures.py": {
+      "bytes": 518,
+      "sha256": "c2195433132bd26e4aa896f079805dde440ae6e1b889dadef3674a865e9b3833"
+    },
+    "scripts/04-record-run.py": {
+      "bytes": 450,
+      "sha256": "28e2a0eb0ceac101c9191dc776969506f3cb1b0f59540f1158bcdf027e4a5a11"
     },
     "scripts/check_results.py": {
       "bytes": 5543,
       "sha256": "3990c8451d034bd900304271dee85ce1de67429f273af0c4b7ddbcd7c4b29c47"
     },
+    "scripts/execute-notebook.py": {
+      "bytes": 1550,
+      "sha256": "f2385aa8e0881628d69dcbb261320d3a11ff1bc6ae2f4c53a8ad912c099322d1"
+    },
     "scripts/materialize_inputs.py": {
       "bytes": 1793,
       "sha256": "26a037173b7159254680a33f6ffad0c32e072edd0f4d0c795991d194c780c407"
     },
+    "scripts/modules/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "scripts/modules/analysis.py": {
+      "bytes": 11495,
+      "sha256": "82a54780289fc41d37b35b69f232453e896e80459dc22c0dbe73f9f21971b771"
+    },
+    "scripts/modules/damadi_plotting.py": {
+      "bytes": 2327,
+      "sha256": "be89541cdcdecb7f4cc449e981b98b1ea8025bbc1fe01f4e50807034430e7ebb"
+    },
+    "scripts/modules/pdf-export.R": {
+      "bytes": 1462,
+      "sha256": "8c4f78ea19b8787c01709ac6b5612d1b1faf0a8899f00ffd1e6eb419360c8890"
+    },
+    "scripts/modules/plotting.py": {
+      "bytes": 6437,
+      "sha256": "9f2acf80b2dcf5bdd714cdc5bf2fa96b32ae111376b85585a8db7acdf2cd8c82"
+    },
+    "scripts/modules/quartz-fonts.R": {
+      "bytes": 1623,
+      "sha256": "5144e2cf3368d26052afc18914ba687a46224728d8bcfa4e01bdedfd4a7326fb"
+    },
+    "scripts/modules/register-quartz-fonts.c": {
+      "bytes": 809,
+      "sha256": "835533e4c7386d6cdc6958981ffdeb62c9bb17fb12d5a1881680488872d8c2ce"
+    },
     "scripts/reproduce.py": {
-      "bytes": 12372,
-      "sha256": "a11394b3ca3d65e6b926d052788d0c7e38f2fbb0d9b2e736487cd5c96d93d760"
+      "bytes": 1128,
+      "sha256": "ea12461ad383dec0557949b52515ed8a2a977330c22ba64e6fbb59fa3f98758d"
     },
     "scripts/verify_files.py": {
       "bytes": 997,
       "sha256": "b453b5cf214ce92bae46b8bd99339a00b88c6819818fb66bce7f0567cec49030"
+    },
+    "setup-environment.sh": {
+      "bytes": 697,
+      "sha256": "c137ecb43a6b18b7954e7d0085f99d7a6ee9d598823ff72e1aa81433656cd72d"
     }
   }
 }

@@ -1,0 +1,156 @@
+{
+  "status": "unreleased normalized companion preparation",
+  "scientific_baseline_doi": "10.5281/zenodo.23675367",
+  "private_source_zip_commit": "427618441cddaa095f456ef392eb9826b28db36d",
+  "private_live_head_verified": false,
+  "source_zip_sha256": "8c6d23a51047d531d8568ae256fdc85a8c470ed66516dbef3519b72cc9358734",
+  "source_manifest_sha256": "07a97939283577b6a1cbbc05822ac96d1d6bdd0006e5f6500d08fec2eb0cc8a1",
+  "archive_snapshot": "v0.1.1",
+  "archive_entry": "E.03--MS-DA-CR",
+  "scientific_reconstruction_edition": "0.1.0",
+  "approved_presentation_edition": "0.1.6",
+  "archive_file_sources": [
+    {
+      "archive_source": "code/modules/pdf-export.R",
+      "destination": "scripts/modules/pdf-export.R",
+      "source_sha256": "8c4f78ea19b8787c01709ac6b5612d1b1faf0a8899f00ffd1e6eb419360c8890"
+    },
+    {
+      "archive_source": "code/modules/damadi_plotting.py",
+      "destination": "scripts/modules/damadi_plotting.py",
+      "source_sha256": "25011dfad4bd60a8fa48e82f8b6650db4d95c3d58ea8cc1bcaf813d63fa69c2b"
+    },
+    {
+      "archive_source": "code/modules/analysis.py",
+      "destination": "scripts/modules/analysis.py",
+      "source_sha256": "838a6ceb01530d9530addb3027053060d67a061007814873529570adc36b2b82"
+    },
+    {
+      "archive_source": "code/modules/quartz-fonts.R",
+      "destination": "scripts/modules/quartz-fonts.R",
+      "source_sha256": "5144e2cf3368d26052afc18914ba687a46224728d8bcfa4e01bdedfd4a7326fb"
+    },
+    {
+      "archive_source": "code/modules/plotting.py",
+      "destination": "scripts/modules/plotting.py",
+      "source_sha256": "cee3c48b0e3f282f0eb10d553c1d74fde2bd08923742708eafa71d57d18a76d7"
+    },
+    {
+      "archive_source": "code/modules/__init__.py",
+      "destination": "scripts/modules/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "archive_source": "code/modules/register-quartz-fonts.c",
+      "destination": "scripts/modules/register-quartz-fonts.c",
+      "source_sha256": "835533e4c7386d6cdc6958981ffdeb62c9bb17fb12d5a1881680488872d8c2ce"
+    },
+    {
+      "archive_source": "code/02-export-waffle.R",
+      "destination": "scripts/02-export-waffle.R",
+      "source_sha256": "bfeafc61e575d3cd8a44537d6e62edbd4e6eb5c19cba2bb26a58f942f7ddf608"
+    },
+    {
+      "archive_source": "code/02b-export-stratum.R",
+      "destination": "scripts/02b-export-stratum.R",
+      "source_sha256": "614d3c5c2f44214aada016bca3f5ffeeaf6904d6507fcc6e1d6a5f77d527aeea"
+    },
+    {
+      "archive_source": "code/03-export-figures.py",
+      "destination": "scripts/03-export-figures.py",
+      "source_sha256": "24ab2a9c1f81011c076c46816cf2c3c9d58c41da931c38577c579b25b098264d"
+    },
+    {
+      "archive_source": "code/04-record-run.py",
+      "destination": "scripts/04-record-run.py",
+      "source_sha256": "28e2a0eb0ceac101c9191dc776969506f3cb1b0f59540f1158bcdf027e4a5a11"
+    },
+    {
+      "archive_source": "code/execute-notebook.py",
+      "destination": "scripts/execute-notebook.py",
+      "source_sha256": "62fc4d019bbe38dd06bdf7a2f887d9c00fe22ef2027396dc8cff183a9dfdde11"
+    },
+    {
+      "archive_source": "config/workspace.json",
+      "destination": "config/workspace.json",
+      "source_sha256": "913761d7fb9cb41a766a32965e2904bd10130fe4a088e5273c0b1bc8f37d0cec"
+    },
+    {
+      "archive_source": "config/input-manifest.json",
+      "destination": "config/input-manifest.json",
+      "source_sha256": "628eba463d8ebe74686ac83ce078febdad6678baebac37dfb246b9a884cb2e76"
+    },
+    {
+      "archive_source": "config/r-environment.json",
+      "destination": "config/r-environment.json",
+      "source_sha256": "bd10419786dda87a134312180d9ea6088af3c6be43fb20705daffe3fa3e8a0b6"
+    },
+    {
+      "archive_source": "requirements.txt",
+      "destination": "requirements.txt",
+      "source_sha256": "97d3fe15d4da62978d88965d082d154fe13cbe8c2468d152c4b239462250cf1c"
+    },
+    {
+      "archive_source": "notebooks/01-reproduce-ejps-analysis.ipynb",
+      "destination": "notebooks/01-reproduce-ejps-analysis.ipynb",
+      "source_sha256": "53b640d4d908a7afcc65a4a97f24259e0713ed0d378742d730395b01ee7c451d"
+    },
+    {
+      "archive_source": "resources/fonts/STIXTwoText-Italic.ttf",
+      "destination": "resources/fonts/STIXTwoText-Italic.ttf",
+      "source_sha256": "8695733706c0768637c6051141abad7cdb854184c7c36fb5050cdd0f4b148e7c"
+    },
+    {
+      "archive_source": "resources/fonts/FONTLOG.txt",
+      "destination": "resources/fonts/FONTLOG.txt",
+      "source_sha256": "4c487f672c92c3eb89575b2b55404bc6ab5403c1c28757e2e680fec81199f0a2"
+    },
+    {
+      "archive_source": "resources/fonts/OFL.txt",
+      "destination": "resources/fonts/OFL.txt",
+      "source_sha256": "bec17cee6412788db45fd2644b301afbc99cc5d372ddd3345dc4a7bfdefb9f04"
+    },
+    {
+      "archive_source": "resources/fonts/AUTHORS.txt",
+      "destination": "resources/fonts/AUTHORS.txt",
+      "source_sha256": "98d40fc97137fea250c07fc46f4f3a4bff15ac8c02adb3fb54a58e1f3755e3ec"
+    },
+    {
+      "archive_source": "resources/fonts/STIXTwoText-MediumItalic.ttf",
+      "destination": "resources/fonts/STIXTwoText-MediumItalic.ttf",
+      "source_sha256": "2692e8e31886972a51978a68a6460f65697351b334452959aea153ff070f718b"
+    },
+    {
+      "archive_source": "resources/fonts/STIXTwoText-Regular.ttf",
+      "destination": "resources/fonts/STIXTwoText-Regular.ttf",
+      "source_sha256": "d2a222614cf280f2db1d4ebd7d6f0dad5772541f8945a96ee4bf899c845b695b"
+    },
+    {
+      "archive_source": "resources/fonts/STIXTwoText-Medium.ttf",
+      "destination": "resources/fonts/STIXTwoText-Medium.ttf",
+      "source_sha256": "2d1f32bbeb89b7b57d726b6bfa6ff5aae2387c4c27ee8f738c1885f70c60e59c"
+    },
+    {
+      "archive_source": "reproduced/figures/fig-citation-impact.pdf",
+      "destination": "figures/fig-citation-impact.pdf",
+      "source_sha256": "46104c5d785364a5ea6814bf081147f3ec3dfbeeec66bf385263fbd60a03a4fc"
+    },
+    {
+      "archive_source": "reproduced/figures/fig-arxiv-citing-patterns.pdf",
+      "destination": "figures/fig-arxiv-citing-patterns.pdf",
+      "source_sha256": "9da5c7d7b05c9a43a11fd20affe62afb63b530ff486d5bd1de31b524c535b761"
+    },
+    {
+      "archive_source": "reproduced/figures/fig-cocitation-strata.pdf",
+      "destination": "figures/fig-cocitation-strata.pdf",
+      "source_sha256": "456b58aace8459b7345cddd08674553dba3ab1b23ea4fcbd4efbe9f3e4b63f58"
+    },
+    {
+      "archive_source": "reproduced/figure-registry.json",
+      "destination": "figures/figure-registry.json",
+      "source_sha256": "e84d22359762e9577df7c36f24704332772c1cbed7dee30e16fbe1167aa22155"
+    }
+  ],
+  "adaptations": "scripts/ paths, split-input restoration, output guards, notebook modes and documentation; mathematical stages retained",
+  "scope": "No new retrieval, annotation, training, model choice or scientific revision"
+}
